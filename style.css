@@ -4,6 +4,9 @@
   --orange: hsl(31, 77%, 52%);
   --cyan: hsl(184, 100%, 22%);
   --dark-cyan: hsl(179, 100%, 13%);
+  --trans-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+  --flow-space: 1.75em;
 }
 
 html {
@@ -14,8 +17,43 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  font-size: 0.938rem;
   margin: 0;
-  padding: 0;
+  background: var(--light-gray);
+  color: var(--trans-white);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--light-gray);
+  text-transform: uppercase;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 5em auto;
+}
+
+.col {
+  padding: 3em;
 }
 
 img {
@@ -23,6 +61,72 @@ img {
   display: block;
 }
 
-.row {
-  display: flex;
+.card-1 {
+  background: var(--orange);
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.card-2 {
+  background: var(--cyan);
+}
+
+.card-3 {
+  background: var(--dark-cyan);
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--light-gray);
+  text-decoration: none;
+  padding: 0.8em 1.75em;
+  border-radius: 100px;
+  border: 2px solid var(--light-gray);
+  transition: all 0.35s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--light-gray);
+}
+
+.btn--orange {
+  color: var(--orange);
+}
+
+.btn--cyan {
+  color: var(--cyan);
+}
+
+.btn--dark-cyan {
+  color: var(--dark-cyan);
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .btn {
+    margin-top: 5em;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .card-1 {
+    border-radius: 0.5em 0 0 0.5em;
+  }
+
+  .card-3 {
+    border-radius: 0 0.5em 0.5em 0;
+  }
 }
