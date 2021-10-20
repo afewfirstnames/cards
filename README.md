@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of my finished project](./screenshot.png)
+![](./screenshot.png)
 
 ### Links
 
@@ -40,8 +40,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- CSS Variables
 
 ### What I learned
 
