@@ -64,4 +64,4 @@ I want to keep driving home flexbox. I didn't get the chance to use it much in t
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/afewfirstnames)
+- Frontend Mentor - [@afewfirstnames](https://www.frontendmentor.io/profile/afewfirstnames)
