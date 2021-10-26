@@ -6,7 +6,7 @@
   --dark-cyan: hsl(179, 100%, 13%);
   --trans-white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
-  --flow-space: 1.75em;
+  --flow-space: 1em;
 }
 
 html {
