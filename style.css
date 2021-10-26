@@ -32,9 +32,10 @@ p {
 }
 
 h2 {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Big Shoulders Display", cursive;
   color: var(--light-gray);
   text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 h2,
@@ -82,7 +83,7 @@ img {
   padding: 0.8em 1.75em;
   border-radius: 100px;
   border: 2px solid var(--light-gray);
-  transition: all 0.35s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -111,7 +112,7 @@ img {
     margin-top: 5em;
   }
 
-  main {
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
