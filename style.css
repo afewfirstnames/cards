@@ -31,14 +31,14 @@ p {
   line-height: 1.6;
 }
 
-h2 {
+h1 {
   font-family: "Big Shoulders Display", cursive;
   color: var(--light-gray);
   text-transform: uppercase;
   font-size: 2.5rem;
 }
 
-h2,
+h1,
 p {
   margin: 0;
 }
